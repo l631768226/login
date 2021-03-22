@@ -57,8 +57,7 @@
 						'Content-Type': 'application/json;charset=utf-8'
 					},
 					success: (res) => {
-						console.log(res.data)
-						console.log(typeof res.data)
+
 						var resDataStr = JSON.stringify(res.data)
 						var resData = JSON.parse(resDataStr)
 						var code = resData.code

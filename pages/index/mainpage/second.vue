@@ -1,6 +1,9 @@
 <template>
 	<view>
 		<label>second</label>
+		<view>
+			
+		</view>
 		<u-tabbar :list="tarbar" :mid-button= "false"></u-tabbar>
 	</view>
 	

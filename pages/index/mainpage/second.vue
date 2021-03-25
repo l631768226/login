@@ -1,11 +1,9 @@
 <template>
 	<view>
-		<view class="u-page">
-			<label>yes</label>
-		</view>
-		
-		<u-tabbar  :list="tarbar" :mid-button="false"></u-tabbar>
+		<label>second</label>
+		<u-tabbar :list="tarbar" :mid-button= "false"></u-tabbar>
 	</view>
+	
 </template>
 
 <script>
@@ -20,7 +18,6 @@
 				iconPath: "home",
 				selectedIconPath: "home-fill",
 				text:"首页",
-				// count: 2,
 				customIcon: false,
 				pagePath: "/pages/index/mainpage/mainpage"
 			},
@@ -43,7 +40,7 @@
 			// 	text: '我的',
 			// 	customIcon: false,
 			// 	isDot: false
-			// },
+			// }
 			]
 		},
 		methods: {

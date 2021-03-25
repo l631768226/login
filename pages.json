@@ -36,11 +36,41 @@
             }
             
         }
+        ,{
+            "path" : "pages/index/mainpage/second",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#909390",
+		"selectedColor":"#303133",
+		"backgroundColor":"#FFFFFF",
+		"borderStyle":"black",
+		"list":[{
+				"iconPath": "home",
+				"selectedIconPath": "home-fill",
+				"text":"首页",
+				// "customIcon": false,
+				"pagePath": "pages/index/mainpage/mainpage"
+			},
+			{
+				"iconPath": "photo",
+				"selectedIconPath": "photo-fill",
+				"text": "照片",
+				// "customIcon": false,
+				"pagePath": "pages/index/mainpage/second"
+			}
+		]
 	}
 }

@@ -57,16 +57,22 @@
 						'Content-Type': 'application/json;charset=utf-8'
 					},
 					success: (res) => {
-
-						var resDataStr = JSON.stringify(res.data)
-						var resData = JSON.parse(resDataStr)
-						var code = resData.code
+						var code = parseInt(res.data.code)
 						console.log(code)
 						if(code > 0){
-							uni.navigateTo({
-								url:'/pages/index/mainpage/mainpage'
-							})
+							console.log("yes")
+							uni.switchTab({
+								url:'/pages/index/mainpage/mainpage',
+								success(suc) {
+									console.log(suc)
+								},
+								fail(fail) {
+									console.log(fail)
+								}
+							});
+							console.log("over")
 						}else{
+							console.log("no")
 							this.showToast(resData.msg)
 						}
 	
